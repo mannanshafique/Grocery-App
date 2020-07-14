@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisteredUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/shape_rec01"
+        android:padding="10dp"
+        android:id="@+id/R1"
+        >
+        <ImageButton
+            android:id="@+id/BtnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:src="@drawable/ic_back"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register User"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageButton
+            android:id="@+id/BtnGps"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:src="@drawable/ic_gps"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/R2"
+        android:layout_marginTop="52dp"
+        >
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_key_white"
+            android:background="@drawable/shape_circle01"/>
+
+    </RelativeLayout>
+   <ScrollView
+    android:layout_below="@+id/R2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/Linear1"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ProfileTv"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:src="@drawable/ic_person"
+            />
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/FullNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect02"
+            android:padding="10dp"
+            android:hint="Full Name"
+            android:inputType="textPersonName|textCapWords"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="7dp"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/PhoneTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect02"
+            android:padding="10dp"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="7dp"
+            />
+        <LinearLayout
+            android:id="@+id/LinearAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <EditText
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:id="@+id/CountryTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rect02"
+                android:padding="10dp"
+                android:hint="Country"
+                android:inputType="textPostalAddress"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="7dp"
+                />
+            <EditText
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:id="@+id/StateTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rect02"
+                android:padding="10dp"
+                android:hint="State"
+                android:inputType="textPostalAddress"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="7dp"
+                />
+            <EditText
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:id="@+id/CityTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rect02"
+                android:padding="10dp"
+                android:hint="City"
+                android:inputType="textPostalAddress"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="7dp"
+                />
+
+        </LinearLayout>
+
+        <EditText
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/FullAddressTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect02"
+            android:padding="10dp"
+            android:hint="Full Address"
+            android:inputType="textPostalAddress|textMultiLine"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="7dp"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/EmailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect02"
+            android:padding="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_email_grey"
+            android:drawablePadding="7dp"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/PasswordTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect02"
+            android:padding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_key_grey"
+            android:drawablePadding="7dp"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/ConfrimPasswordTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect02"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:drawableLeft="@drawable/ic_key_grey"
+            android:drawablePadding="7dp"
+            />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/BtnRegister"
+            android:layout_marginTop="20dp"
+            android:minWidth="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Register"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/AreYouSellerTv"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="Are you a Seller? Register as Seller"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+   </ScrollView>
+
+</RelativeLayout>
